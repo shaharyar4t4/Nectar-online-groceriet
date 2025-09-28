@@ -1,6 +1,7 @@
+import AllScreen from '@/navigation/stack/Allscreen';
 import { darkTheme, lightTheme } from '@/theme/theme';
 import { useFonts } from 'expo-font';
-import { StyleSheet, Text, View } from "react-native";
+import { Text } from "react-native";
 import { PaperProvider } from 'react-native-paper';
 
 
@@ -19,29 +20,28 @@ export default function RootLayout() {
     // this loaded is help if some case the font is not loaded so we show the Empty screen
   }
 
- 
-
-
   return (
     <PaperProvider theme={isDarktheme ? darkTheme : lightTheme}>
-      <View style={styles.container}>
-      <Text style={styles.txt}>Hello World</Text>
-    </View>
+      <AllScreen/>
     </PaperProvider>
     
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: darkTheme.colors.background,
-  },
-  txt: {
-    fontSize: 24,
-    fontFamily: "Gilroy-Medium",
-    color: darkTheme.colors.primary,
-  }
-}); 
+
+{/* <View style={styles.container}>
+      <Text style={styles.txt}>Hello World</Text>
+    </View> */}
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: "center",
+//     alignItems: "center",
+//     backgroundColor: darkTheme.colors.background,
+//   },
+//   txt: {
+//     fontSize: 24,
+//     fontFamily: "Gilroy-Medium",
+//     color: darkTheme.colors.primary,
+//   }
+// }); 
