@@ -4,15 +4,23 @@ import {
 } from 'react-native-paper';
 
 //show the light theme
-export const lightTheme ={
+export const lightTheme = {
     ...MD3LightTheme,
-    primary: "#E21B70",
-    background: "#FEFEFE"
+    colors: {
+        ...MD3LightTheme,
+        primary: "#E21B70",
+        background: "#FEFEFE",
+        surface: "#000" 
+    }
 }
 
 // show the dark theme
-export const darkTheme ={
+export const darkTheme = {
     ...MD3DarkTheme,
-    primary: "#E21B70",
-    background: "#E0E0E0"
+    colors: {
+        ...MD3DarkTheme,
+        primary: "#E21B70",
+        background: "#121212",
+         surface: "#fff" 
+    }
 }

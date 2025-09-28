@@ -1,11 +1,20 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import MainLayout from '@/components/layout/Mainlayout';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { useTheme } from 'react-native-paper';
+
+
 
 const Onboreding = () => {
+  const theme = useTheme();
   return (
-    <View style={styles.container}>
-          <Text style={styles.txt}>Hello World</Text>
-        </View>
+    
+          <MainLayout>
+            <View style = {[styles.container,{backgroundColor: theme.colors.background}]}>
+              <Text style={[styles.txt,{color: theme.colors.surface}]}>Hello World</Text>
+            </View>
+          </MainLayout>
+       
   )
 }
 
@@ -16,11 +25,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    // backgroundColor: darkTheme.colors.background,
+    
   },
   txt: {
     fontSize: 24,
     fontFamily: "Gilroy-Medium",
-    // color: darkTheme.colors.primary,
+    
   }
 }); 
