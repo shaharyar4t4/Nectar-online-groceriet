@@ -13,7 +13,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({children }) => {
     return (
         
         <SafeAreaProvider>
-            <SafeAreaView style={{ flex: 1,  }} edges={[ 'left', 'right']}>
+            <SafeAreaView style={{ flex: 1 }} edges={[ 'left', 'right']}>
                 <StatusBar/>
                 {children}
             </SafeAreaView>
