@@ -14,6 +14,7 @@ export default function RootLayout() {
     "Gilroy-Light": require("../assets/fonts/Gilroy-Light.ttf"),
     "Gilroy-Medium": require("../assets/fonts/Gilroy-Medium.ttf"),
     "Gilroy-Regular": require("../assets/fonts/Gilroy-Regular.ttf"),
+    "Gilroy-SemiBold": require("../assets/fonts/Gilroy-SemiBold.ttf")
   })
   if (!fontLoaded) {
     return <Text></Text>
