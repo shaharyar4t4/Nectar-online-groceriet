@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     btnstyle:{
       borderRadius:19,
       width: "100%",
-      paddingVertical: 6,
+      paddingVertical: 8,
       color: "#fff"
     }
 }); 
