@@ -9,6 +9,7 @@ export const lightTheme = {
     colors: {
         ...MD3LightTheme,
         primary: "#E21B70",
+        onPrimary: "#FFFFFF", 
         background: "#FEFEFE",
         surface: "#000" 
     }
@@ -20,7 +21,8 @@ export const darkTheme = {
     colors: {
         ...MD3DarkTheme,
         primary: "#E21B70",
+        onPrimary: "#FFFFFF", 
         background: "#121212",
-         surface: "#fff" 
+        surface: "#fff" 
     }
 }

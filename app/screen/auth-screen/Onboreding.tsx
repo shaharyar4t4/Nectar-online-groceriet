@@ -1,3 +1,4 @@
+import Primarybutton from '@/components/buttoms/Primarybutton';
 import MainLayout from '@/components/layout/Mainlayout';
 import React from 'react';
 import { Image, ImageBackground, StyleSheet, Text } from 'react-native';
@@ -18,6 +19,7 @@ const Onboreding = () => {
             <Text style={styles.headertxt}>Welcome</Text>
             <Text style={styles.headertxt}>to our store</Text>
             <Text style={styles.subtxt}>Ger your groceries in as fast as one hour</Text>
+            <Primarybutton>Get Started</Primarybutton>
             </ImageBackground>
           </MainLayout>
        
@@ -29,7 +31,7 @@ export default Onboreding
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "flex-end",
+    justifyContent: "center",
     alignItems: "center",
     
   },
